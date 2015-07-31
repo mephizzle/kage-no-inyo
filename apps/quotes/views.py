@@ -7,7 +7,6 @@ from .utils import patch_view_decorator
 login_required = patch_view_decorator(login_required(login_url='/admin/'))
 
 
-@login_required
 class QuoteWall(TemplateView):
     template_name = 'quotes/quote_wall.html'
 
